@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hsl(234, 29%, 20%);
+  margin: 0;
+}
+.card {
+  display: flex;
+  width: 800px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+}
+.right {
+  width: 60%;
+  margin-right: 20px;
+}
+.left {
+  width: 40%;
+}
+.left img {
+  width: 100%;
+  height: auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+li {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+input-alert {
+  background-color: hsl(4, 100%, 67%) ;
+  color: white;
+}
+input:hover {
+  border: 1px solid hsl(4, 100%, 67%);
+}
+label {
+  margin-bottom: 10px;
+}
+button {
+  margin-top: 20px;
+  padding: 30px;
+  border: none;
+  color: white;
+  background: hsl(235, 18%, 25%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  transition: all 1s;
+  background-color: hsl(4, 100%, 67%);
+}
+h1 {
+  font-size: 40px;
+}
+.hide {
+  display: none;
+}
+
+.submit-card {
+  background: white;
+  width: 400px;
+  padding: 40px;
+  border-radius: 10px;
+}
+.submit-card h1 {
+  font-size: 40px;
+  border-radius: 5px;
+}
+.submit-card-icon {
+  width: 50px;
+  animation: iconPop 1s;
+  transition: 1s ease-in-out;
+}
+.submit-card button {
+  width: 100%;
+}
+.icon-list {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  animation: iconPop 1s;
+  transition: ease-in-out;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.image-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-image {
+  min-width: 100%;
+}
+
+@keyframes iconPop {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .card {
+    flex-direction: column-reverse;
+    width: 95%;
+    padding: 0;
+  }
+  .card h1 {
+    font-size: 30px;
+  }
+  .right {
+    width: 100%;
+    padding: 20px;
+  }
+  .left {
+    width: 100%;
+  }
+  .left img {
+    content: url("Images/illustration-sign-up-mobile.svg");
+    width: 100%;
+    height: 3%;
+  }
+  form {
+    width: 90%;
+  }
+  .submit-card {
+    min-height: 80vh;
+  }
+  .submit-card-icon {
+    animation: iconPop 1s;
+    transition: ease-in-out;
+    height: 80%;
+  }
+}
