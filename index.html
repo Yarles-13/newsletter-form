@@ -1,86 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="icon"
-      href="Images/favicon-32x32.png"
-      sizes="32x32"
-      type="image/png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="Images/favicon-32x32.png" sizes="32x32" type="image/png" />
 
-    <title>Newsletter Form</title>
-  </head>
-  <body>
-    <div class="card">
-      <div class="right">
-        <h1>Stay updated</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>
-            <img
-              src="Images/icon-list.svg"
-              alt="Icon List"
-              class="icon-list"
-            />Product discovery and building what matters
-          </li>
-          <li>
-            <img
-              src="Images/icon-list.svg"
-              alt="Icon List"
-              class="icon-list"
-            />Measuring to ensure updates are a success
-          </li>
-          <li>
-            <img src="Images/icon-list.svg" alt="Icon List" class="icon-list" />
-            And much more!
-          </li>
-        </ul>
-        <form>
-          <label for="email"> <em>Email address:</em></label>
-          <input type="email" id="email" />
-          <button type="submit" class="submit-button">
-            Subscribe to monthly newsletter
-          </button>
-        </form>
-      </div>
-      <div class="left">
-        <!-- <img
-          src="Images/illustration-sign-up-desktop.svg"
-          alt="main-img"
-          class="illustration-sign-up-desktop"
-          /> -->
-        <div class="carousel">
-          <div class="image-container" id="images">
-            <img
-              class="carousel-image"
-              src="Images/illustration-sign-up-desktop.svg"
-              alt="Main-photo"
-            />
-            <img
-              class="carousel-image"
-              src="Images/plant-image.png"
-              alt="plant-image"
-            />
-            <img
-              class="carousel-image"
-              src="Images/why-choose-us-img 1.png"
-              alt="chair-photo"
-            />
-          </div>
+  <title>Newsletter Form</title>
+</head>
+<body>
+  <div class="card">
+    <div class="right">
+      <h1>Stay updated</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li>
+          <img src="Images/icon-list.svg" alt="Icon List" class="icon-list" />Product discovery and building what
+          matters
+        </li>
+        <li>
+          <img src="Images/icon-list.svg" alt="Icon List" class="icon-list" />Measuring to ensure updates are a success
+        </li>
+        <li>
+          <img src="Images/icon-list.svg" alt="Icon List" class="icon-list" />
+          And much more!
+        </li>
+      </ul>
+      <form>
+        <div class="email-error-state-container">
+            <label for=" email"> Email address: </label>
+          <p class="invalid-message hide"> valid email required </p>
+        </div>
+        <input type="email" id="email" />
+        <button type="submit" class="submit-button">
+          Subscribe to monthly newsletter
+        </button>
+      </form>
+    </div>
+    <div class="left">
+      <div class="carousel">
+        <div class="image-container" id="images">
+          <img class="carousel-image" src="Images/illustration-sign-up-desktop.svg" alt="Main-photo" />
+          <img class="carousel-image" src="Images/plant-image.png" alt="plant-image" />
+          <img class="carousel-image" src="Images/why-choose-us-img 1.png" alt="chair-photo" />
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="submit-card hide">
-      <img class="submit-card-icon" src="Images/icon-success.svg" alt="icon" />
-      <h1>Thanks for Subscribing!</h1>
-      <p id="confirmation-message">
-      </p>
-      <button id ='dismiss-button'>Dismiss Message</button>
-    </div>
-    <script src="main.js"></script>
-  </body>
+  <div class="submit-card hide">
+    <img class="submit-card-icon" src="Images/icon-success.svg" alt="icon" />
+    <h1>Thanks for Subscribing!</h1>
+    <p id="confirmation-message"></p>
+    <button id="dismiss-button">Dismiss Message</button>
+  </div>
+  <script src="main.js"></script>
+</body>
 </html>

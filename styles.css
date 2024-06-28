@@ -119,6 +119,21 @@ h1 {
 .carousel-image {
   min-width: 100%;
 }
+.email-error-state-container {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.email-error-state-container p {
+  margin-bottom:  22px;
+  color:hsl(4, 100%, 67%) ;
+  font-weight: 500;
+}
+
+.email-alert {
+  background:hsl(4, 100%, 67%) ;
+}
 
 @keyframes iconPop {
   from {
